@@ -47,7 +47,7 @@ class _Model(HACModel):
     def compute_model(self, cluster, parent=None):
 
         coverage = parent.current_state.label_coverage(cluster)
-        X = features.crop(coverage, mode='strict')
+        X = parent.features.crop(coverage, mode='strict')
 
         n = len(X)
         x = X.mean(axis=0)
