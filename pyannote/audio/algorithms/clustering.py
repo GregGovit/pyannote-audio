@@ -51,7 +51,7 @@ class _Model(HACModel):
 
         n = len(X)
         x = X.mean(axis=0)
-
+        
         return (x, n)
 
     def compute_merged_model(self, clusters, parent=None):
@@ -81,7 +81,7 @@ class _Model(HACModel):
 
 
 class SpeechTurnClustering(HierarchicalAgglomerativeClustering):
-    """Face clustering
+    """Speech turn clustering
 
     Parameters
     ----------
