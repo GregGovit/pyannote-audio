@@ -51,7 +51,6 @@ class _Model(HACModel):
 
         n = len(X)
         x = X.mean(axis=0)
-        
         return (x, n)
 
     def compute_merged_model(self, clusters, parent=None):
